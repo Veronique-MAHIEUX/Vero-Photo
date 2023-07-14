@@ -1,160 +1,49 @@
+/* J'ai placé une image en background qui s'applique sur tout le body */
 body {
-    font-family: sans-serif;
-    margin: 0;
     background: url(../img/dandelion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+    height: 850px;
 }
-
-
-/*Header*/
-a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.8em;
-  }
-
-  h1 {
-    font-size: 1.8em;
-    margin: 0.7em 0;
-    text-align: center;
-    font-family: Georgia, serif;
-    
-  }
-
-  #page-header {
- 
-    color:rgba(255,255,255,0.75);
-    padding: 5em 0 10em;
-    text-align: center;
-    text-transform: uppercase;
-    background: url(../img/dandelion.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #page-header h1{
-      color: white;
-  }
-
-  #main-nav {
-    /*position: fixed;
-    z-index: 10;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1em;
-  }
-   
-  #main-nav ul {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
-  #main-nav ul li {
-    display: inline-block;
-    margin: 0 0 0 1em;
-  }
-  #main-nav ul li a {
-    color: white;
-    transition: color 0.3s;
-  }
-  #main-nav ul li a:hover {
-    color: #fff;
-  }
-
- .social{
-    display: inline-block;
-    margin: 0 0 0 1em;
-    text-align: justify;
-    
-  }
-
-  .social {
-    text-align: right;
-  }
-
-  /*Container*/
-  #work .section-content {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-
-  }
-  #work .post {
-    box-sizing: border-box;
-    padding: 1em 2em;
-    width: 50%;
-  }
-  #work .post img {
-    box-sizing: border-box;
-    border: 1px solid white;
-    width: 125%;
-  }
-
-  #work article a{
-    color: #f0f0f0;
-    padding: 1em;
-    font-weight: bold;
-  }
-  #work .post footer {
-    border-top: 1px solid #ccc;
-    padding: 1em 0;
-    margin-top: 1em;
-  }
-  #work .post .more-button {
-    display: block;
-    color: white;
-  }
-
-  /** Wrapper */
-#page-wrapper {
-
-}
-.inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/** actions */
-.actions {
-  margin: 4em 0;
+/* J'ai importé une typographie en link dans la balise head, que j'ai appliqué ici sur le h1*/
+h1 {
+  font-family: 'Calligraffitti', cursive;
+  color : white;
+  font-size: 65px;
   text-align: center;
+  padding-top: 6%;
 }
-.action-button {
-  margin: 0.5em;
-  padding: 1em;
-  border-radius: 8px;
+/* J'ai mis en place un background-color opaque sur la nav-bar */
+.nav-bar {
+  background-color: white;
+  opacity: 0.33;
+  padding: 40px 0;
+  padding-right: 35px;
+}
+/* J'ai aligné et espacé chaque items */
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+/* J'ai ajusté la taille de typo des items */
+li a{
+  color: black;
   font-weight: bold;
+  font-size: 35px;
+  font-family: 'Calligraffitti', cursive;
+  text-decoration: none; 
 }
-.action-button-plain {
-  border: 2px solid #3f434b;
-  background-color: #3f434b;
-  color: white;
+/* J'ai appliqué un hover sur les items */
+li a:hover {
+  color: gray;
+
 }
-.action-button-line {
-  border: 2px solid #3f434b;
-  color: #3f434b;
-}
-
- 
-
-
-
-
-
-/*Footer*/
-.footer {
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-  
+/* J'ai centré mon footer */
+footer{
+  text-align: center;
+  margin: 15% 0;
+  padding-top: 10px;
 }
 
-.logo {
-    width: 10%;
-  
-    
-    
-  
-}
